@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidarAcceso", "ValidarAcc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funciones", "Funciones\Funciones.csproj", "{17E4B72A-B727-47DC-9C1E-EE5CC59D1E2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gestionarVentas", "gestionarVentas\gestionarVentas.csproj", "{106B2326-343A-4B03-A4FA-511BC47C0803}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{17E4B72A-B727-47DC-9C1E-EE5CC59D1E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17E4B72A-B727-47DC-9C1E-EE5CC59D1E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17E4B72A-B727-47DC-9C1E-EE5CC59D1E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106B2326-343A-4B03-A4FA-511BC47C0803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106B2326-343A-4B03-A4FA-511BC47C0803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106B2326-343A-4B03-A4FA-511BC47C0803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106B2326-343A-4B03-A4FA-511BC47C0803}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
