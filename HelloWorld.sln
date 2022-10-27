@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CiclosWhile", "CiclosWhile\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidarAcceso", "ValidarAcceso\ValidarAcceso.csproj", "{A34773ED-7A9B-4353-ACF2-CC23421035CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funciones", "Funciones\Funciones.csproj", "{17E4B72A-B727-47DC-9C1E-EE5CC59D1E2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funciones", "Funciones\Funciones.csproj", "{17E4B72A-B727-47DC-9C1E-EE5CC59D1E2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gestionarVentas", "gestionarVentas\gestionarVentas.csproj", "{106B2326-343A-4B03-A4FA-511BC47C0803}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gestionarVentas", "gestionarVentas\gestionarVentas.csproj", "{106B2326-343A-4B03-A4FA-511BC47C0803}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases", "Clases\Clases.csproj", "{D5FAD60E-889D-49E4-9353-5937AB2F6AA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{106B2326-343A-4B03-A4FA-511BC47C0803}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{106B2326-343A-4B03-A4FA-511BC47C0803}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{106B2326-343A-4B03-A4FA-511BC47C0803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5FAD60E-889D-49E4-9353-5937AB2F6AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5FAD60E-889D-49E4-9353-5937AB2F6AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5FAD60E-889D-49E4-9353-5937AB2F6AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5FAD60E-889D-49E4-9353-5937AB2F6AA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
