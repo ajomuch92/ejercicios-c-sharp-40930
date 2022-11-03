@@ -1,8 +1,6 @@
 ﻿using System;
-using ClasesAbstractasInterfaces;
-using Interfaces;
 
-namespace Implemntacion
+namespace ClasesAbstractasInterfaces
 {
     internal class Program
     {
@@ -16,7 +14,7 @@ namespace Implemntacion
 
             IMedidaCalculable2D medidaCalculable2D = rectangulo;
 
-            Console.WriteLine("El área del rectángulo es {0}",rectangulo.area());
+            Console.WriteLine("El área del rectángulo es {0}", rectangulo.area());
             Console.WriteLine("El perímetro del rectángulo es {0}", rectangulo.perimetro());
             Console.WriteLine(rectangulo.color);
 
