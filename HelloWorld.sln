@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArreglosListasDiccionarios"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excepciones", "Excepciones\Excepciones.csproj", "{1B2B22D7-82BE-4315-B001-000A43704821}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listas", "Listas\Listas.csproj", "{9AA9FF8C-67CF-4E56-85EC-1A17F568E9E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Listas", "Listas\Listas.csproj", "{9AA9FF8C-67CF-4E56-85EC-1A17F568E9E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConexionBaseDeDatos", "ConexionBaseDeDatos\ConexionBaseDeDatos.csproj", "{C19EC77D-BAAC-4323-9819-B6EE54674C08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{9AA9FF8C-67CF-4E56-85EC-1A17F568E9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AA9FF8C-67CF-4E56-85EC-1A17F568E9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AA9FF8C-67CF-4E56-85EC-1A17F568E9E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19EC77D-BAAC-4323-9819-B6EE54674C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19EC77D-BAAC-4323-9819-B6EE54674C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19EC77D-BAAC-4323-9819-B6EE54674C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19EC77D-BAAC-4323-9819-B6EE54674C08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
