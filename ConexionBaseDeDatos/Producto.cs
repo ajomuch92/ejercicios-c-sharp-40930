@@ -13,4 +13,27 @@ namespace ConexionBaseDeDatos
         public string Contrasenia { get; set; }
         public string Mail { get; set; }
     }
+
+    public class Producto
+    {
+        public long Codigo { get; set; }
+        public string Descripcion { get; set; }
+        public double PrecioCompra { get; set; }
+        public double PrecioVenta { get; set; }
+        public string Categoria { get; set; }
+
+        public Producto()
+        {
+
+        }
+
+        public Producto(long id, string descripcion, double precioCompra, double precioVenta, string categoria)
+        {
+            Id = id;
+            Descripcion = descripcion;
+            PrecioCompra = precioCompra;
+            PrecioVenta = precioVenta;
+            Categoria = categoria;
+        }
+    }
 }
