@@ -9,55 +9,23 @@ namespace ConexionBaseDeDatos
     {
         static void Main(string[] args)
         {
-            String connectionString = "Server=sql.bsite.net\\MSSQL2016;" +
-                "Database=ajomuch92_coderhouse_csharp_40930;" +
-                "User Id=ajomuch92_coderhouse_csharp_40930;" +
-                "Password=ElQuequit0Sexy2022;";
-            try
+            Console.WriteLine("Empezando la consulta");
+            ConexionBaseDatos baseDatos = new ConexionBaseDatos();
+            /*Usuario usuario = new Usuario(0, "Tomás", "Lazara", "tlazara2", "asd.456", "ejemplo@mail.com");
+            int ultimoIdInsertado = baseDatos.InsertarUsuario(usuario);*/
+            Usuario usuarioActualizar = new Usuario(10, "Tomás", "Lazara", "tlazara2", "asd.456", "ejemplo@mail.com");
+            usuarioActualizar.Contrasenia = "EstaContraseñaFueCambiada";
+            int filasAfectadas = baseDatos.CambiarContrasenia(10, "NuevaContraseñaActualizada");
+            if (filasAfectadas != 0)
             {
-                Console.WriteLine("Creando la conexión");
-                using (SqlConnection sqlConnection = new SqlConnection(connectionString))
-                {
-                    using(SqlCommand cmd = new SqlCommand("SELECT * FROM Usuario", sqlConnection))
-                    {
-                        sqlConnection.Open();
-                        List<Usuario> lista = new List<Usuario>();
-                        using(SqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            if (reader.HasRows)
-                            {
-                                while(reader.Read())
-                                {
-                                    Usuario usuario = new Usuario();
-                                    usuario.Id = long.Parse(reader["Id"].ToString());
-                                    usuario.Nombre = reader["Nombre"].ToString();
-                                    usuario.Apellido = reader["Apellido"].ToString();
-                                    usuario.NombreUsuario = reader["NombreUsuario"].ToString();
-                                    usuario.Contrasenia = reader["Contraseña"].ToString();
-                                    usuario.Mail = reader["Mail"].ToString();
-                                    lista.Add(usuario);
-                                }
-                                Console.WriteLine("Imprimiendo lista");
-                                foreach(Usuario usuario in lista)
-                                {
-                                    Console.WriteLine("ID " + usuario.Id);
-                                    Console.WriteLine("Nombre " + usuario.Nombre);
-                                    Console.WriteLine("Apellido " + usuario.Apellido);
-                                }
-                            }
-                            else
-                            {
-                                Console.WriteLine("No tiene registros...");
-                            }
-                        }
-                    }
-                    sqlConnection.Close();
-                }
+                Console.WriteLine("Actualizado correctamente");
             }
-            catch(Exception ex)
+            else
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine("Ocurrió un error o el ID no existe");
             }
+
+            Console.WriteLine("Terminando la consulta");
         }
 
         static void CreandoConsultas()

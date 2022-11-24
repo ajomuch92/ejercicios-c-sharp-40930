@@ -12,6 +12,18 @@ namespace ConexionBaseDeDatos
         public string NombreUsuario { get; set; }
         public string Contrasenia { get; set; }
         public string Mail { get; set; }
+
+        public Usuario() { }
+
+        public Usuario(long id, string nombre, string apellido, string nombreUsuario, string contrasenia, string mail)
+        {
+            Id = id;
+            Nombre = nombre;
+            Apellido = apellido;
+            NombreUsuario = nombreUsuario;
+            Contrasenia = contrasenia;
+            Mail = mail;
+        }
     }
 
     public class Producto
@@ -27,9 +39,9 @@ namespace ConexionBaseDeDatos
 
         }
 
-        public Producto(long id, string descripcion, double precioCompra, double precioVenta, string categoria)
+        public Producto(long codigo, string descripcion, double precioCompra, double precioVenta, string categoria)
         {
-            Id = id;
+            Codigo = codigo;
             Descripcion = descripcion;
             PrecioCompra = precioCompra;
             PrecioVenta = precioVenta;
